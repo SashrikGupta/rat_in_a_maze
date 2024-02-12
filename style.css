@@ -1,0 +1,172 @@
+*
+{
+  margin : 0 ; 
+  padding : 0 ; 
+}
+
+#nav{
+  background: linear-gradient(45deg , rgb(26, 165, 203) , rgba(180, 10, 149, 0.671));
+  width : 100vw ; 
+  height : 60px ; 
+  color : white ; 
+  font-size : 50px ; 
+  font-family: cursive ;
+  font-weight : bolder ; 
+  display : flex ; 
+  justify-content : center ; 
+  align-items : center ; 
+  margin-top:0 ; 
+}
+
+body
+{
+  height : 100vh;
+  align-items: center;
+  width : 100vw ; 
+  background: linear-gradient(45deg , rgb(26, 165, 203) , rgba(180, 10, 149, 0.671));
+  background-repeat:no-repeat ;
+  background-size: contain;
+}
+
+#inner
+{
+  width : 75vh ; 
+  height : 30.86px ;
+  display : flex ; 
+  justify-content: space-around;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#contain
+{
+
+  height : calc(100vh - 60px) ; 
+  display:flex ; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+
+}
+
+td:hover {
+   background-color:red;
+ }
+
+ .hovered {
+   background-color: rgb(179, 255, 0);
+ }
+
+ table
+ {
+   background-color: none ;
+   width : 75vh ; 
+   height : 75vh ;  
+ }
+  td
+ {
+   border : 1px black solid ; 
+   
+ }
+ input::placeholder
+ {
+    color : white 
+ }
+ 
+ input,button
+{
+   width : 22% ; 
+   border-radius :2rem ; 
+   text-align: center ;
+   font-size : 24px ; 
+   background-color: rgba(250, 235, 215, 0);
+   color:white ; 
+   border : 2px white solid ; 
+}
+
+#outer
+{
+  width : 100vw ; 
+  height : calc(100vh - 60px ) ; 
+  display : flex ; 
+  justify-content: center;
+  align-items: center;
+}
+
+#info
+{
+  width : calc(100vw - 75vh - 200px ) ; 
+  height : calc(61.72px + 75vh) ; 
+  margin-left : 100px ;
+  border : 2px white solid ; 
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 459px) {
+  #contain{
+    width : 100vw ; 
+    display:flex ; 
+    flex-direction: column; 
+    justify-content: start; 
+    align-items: center;
+  }
+  input,button
+  {
+     width : 22% ; 
+     border-radius :2rem ; 
+     text-align: center ;
+     font-size : 14px ; 
+     background-color: rgba(250, 235, 215, 0);
+     color:white ; 
+     border : 2px white solid ; 
+  }
+  #nav
+  {
+     font-size: 20px;
+  }
+
+  table
+  {
+    background-color: none ;
+    width : 75vw ; 
+    height : 75vw ;  
+  }
+   td
+  {
+    border : 1px black solid ; 
+    
+  }
+  input::placeholder
+  {
+     color : white 
+  }
+  
+ 
+ #outer
+ {
+   width : 100vw ; 
+   height : calc(100vh ) ; 
+   display : flex ; 
+   justify-content: start;
+   align-items: center;
+ }
+ 
+ #info
+ {
+   width : calc(100vw - 75vw - 200px ) ; 
+   height : calc(61.72px + 75vw) ; 
+   margin-left : 100px ;
+   border : 2px white solid ; 
+   border-radius: 2rem;
+ }
+ #inner
+{
+  width : 75vw ; 
+  height : 30.86px ;
+  display : flex ; 
+  justify-content: space-around;
+  padding-left: 0;
+  padding-right: 0;
+}
+ 
+}
